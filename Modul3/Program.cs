@@ -6,6 +6,29 @@ namespace Modul3
     {
         static void Main(string[] args)
         {
+			Console.Write("Enter your name: ");
+			string name = Console.ReadLine();
+			
+			Console.Write("Enter your age: ");
+			byte age = checked((byte)int.Parse(Console.ReadLine()));
+			
+			Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+
+			Console.Write("Enter your birthdate: ");
+			var birthdate = Console.ReadLine();
+			Console.WriteLine("Your birthdate is {0} ", birthdate);
+
+			Console.ReadKey();
+		}
+	}
+}
+
+/*
+			DayOfWeek FavorDay;
+			Console.Write("И Ваш любимый день: ");
+			FavorDay = (DayOfWeek) int.Parse(Console.ReadLine());
+			Console.Write("Ваш любимый день {0}", FavorDay);
+
 			string MyName = "Dmitrij";
 			string name = "Dmitrij";
 			byte age = 50;
@@ -20,28 +43,12 @@ namespace Modul3
 			Console.WriteLine("{0} \n\t {1} \n {2}", name, age,  favcolor);
 
 			string str =Console.ReadLine();
-		}
-
-
 		enum Semaphore
 		{
 			Red = 100,
 			Yellow = 200,
 			Green = 300
 		}
-
-	}
-}
-
-/*
-			byte MyAge = 50;
-			bool HavePet = false;
-			double MyShoeSize = 42;
-
-			Console.WriteLine("My name is {0}", MyName);
-			Console.WriteLine("My Age is {0}", MyAge);
-			Console.WriteLine("Do I have a pate? "+HavePet);
-			Console.WriteLine("My shoe size is " + MyShoeSize);
 
 */
 //Console.WriteLine("\u0040");
